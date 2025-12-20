@@ -1,3 +1,6 @@
+// Student Record Search System
+// Academic Mini Project (2022)
+// Implements multi-field search with basic fuzzy matching
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -86,6 +89,8 @@ stud s[n] = {
 void showData(stud a);
 int checkString(char check[], char CHECK[]);
 int checkInt(char *check, int CHECK);
+
+// Main Function
 int main()
 {
     int i;
@@ -112,6 +117,7 @@ int main()
     return 0;
 }
 
+// Displays student details
 void showData(stud a)
 {
     printf("First Name: %s\n", a.fname);
@@ -123,6 +129,7 @@ void showData(stud a)
     printf("\n");
 }
 
+// Performs approximate string matching (fuzzy search)
 int checkString(char check[], char CHECK[])
 {
     int i;
@@ -141,6 +148,7 @@ int checkString(char check[], char CHECK[])
         return 0;
 }
 
+// Checks numeric input against integer fields
 int checkInt(char *check, int CHECK)
 {
     int intCheck;
