@@ -14,6 +14,11 @@ roll number, name, birth year, and gender.
 - Search by gender
 - Basic approximate (fuzzy) string matching
 
+## 🔍 Search Logic
+The system supports basic approximate (fuzzy) string matching.
+This allows users to retrieve relevant records even if the input
+contains minor spelling variations.
+
 ## 🛠 Technologies Used
 - Language: C
 - Concepts:
@@ -26,3 +31,7 @@ roll number, name, birth year, and gender.
 ```bash
 gcc src/main.c -o student_search
 ./student_search
+
+## 🚀 Future Improvements
+- Replace static array with database-backed storage
+- Implement advanced string matching algorithms
